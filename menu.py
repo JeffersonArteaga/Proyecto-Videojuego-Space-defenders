@@ -120,7 +120,7 @@ def main():
                 if menu:
                     if 568 <= x <= 705 and 421 <= y <= 447:
                         pygame.quit()
-                        os.system("py -m nivel1.py")
+                        os.system("python3 nivel1.py")
                         sys.exit()
                     if 545 <= x <= 734 and 522 <= y <= 545:
                         menu = False # Transición a la pantalla de créditos

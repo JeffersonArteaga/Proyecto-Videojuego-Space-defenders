@@ -98,18 +98,18 @@ def main():
                         paused = not paused
                     elif 199 <= x <= 502 and 445 <= y <= 464:
                         pygame.quit()
-                        os.system("py -m menu.py")
+                        os.system("python3 menu.py")
                         sys.exit()
 
                 if time_left < 0 and nave.salud > 0:
                     x, y = pygame.mouse.get_pos()
                     if 209 <= x <= 486 and 389 <= y<= 408:
                         pygame.quit()
-                        os.system("py -m nivel2.py")
+                        os.system("python3 nivel2.py")
                         sys.exit()
                     elif 199 <= x <= 502 and 445 <= y <= 464:
                         pygame.quit()
-                        os.system("py -m menu.py")
+                        os.system("python3 menu.py")
                         sys.exit()
                 
                 if time_left >= 0 and nave.salud <= 0:
@@ -119,7 +119,7 @@ def main():
                         sys.exit()
                     elif 199 <= x <= 502 and 445 <= y <= 464:
                         pygame.quit()
-                        os.system("py -m menu.py")
+                        os.system("python3 menu.py")
                         sys.exit()
 
         if not paused:  #Si el juego no esta pausado
